@@ -14,5 +14,5 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           pip install --upgrade huggingface-hub
-          python -c "from huggingface_hub import HfApi; HfApi().get_space_runtime(LuHein/n8n'')"
+          python -c "from huggingface_hub import HfApi; HfApi().get_space_runtime('LuHein/n8n')"
           echo "Successfully pinged Space at $(date)"
